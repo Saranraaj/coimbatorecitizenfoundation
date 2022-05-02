@@ -1,0 +1,178 @@
+<html>
+<head><title>CoimbatoreCitizens'Foundation</title>
+<style>
+ul {list-style-type: none;
+     position:fixed;
+     top:-50;
+overflow:hidden;
+     margin:30px;
+     padding:30px;
+     width:1224px;
+     height:25px;
+     display:inline-block;
+     background-color:#40bf40;
+     border-left:10px solid orange;
+     }
+
+
+     
+
+li {float:left;
+    border-right:2px solid #001a00;
+   }
+
+    
+
+li a, .dropbtn {display:inline-block;
+                     color: white;
+                     text-align: center; 
+                     padding: 14px 16px;
+                     text-decoration: none;
+                     }
+
+
+li a:hover .dropdown:hover .dropbtn {background-color:black;
+                                                           }
+
+li.dropdown {display:inline-block;
+                    }
+
+.dropdown-content {display:none;
+                               position:fixed;
+                              background-color:#194d19;
+                              min-width:150px;      
+                              box-shadow:0pz 8px 16px 0px rgba(0,0,0,0.2);
+                              z-index:1;
+                              }
+
+.dropdown-content a {color:white;
+
+                                  padding:12px 16px;
+                                  display:block;
+                                  text-align:left;
+                                  }
+
+.dropdown-content a:hover {background-color:#40bf40;
+                                            }
+
+.dropdown:hover  .dropdown-content {display:block;
+                                                            }
+
+#h2  {border-left: 10px solid orange;
+      background-color:#40bf40;
+      
+       margin: 30px;
+       padding: 30px;
+       
+       font-size:35px;
+       color:black;
+       
+       }
+
+h1 {text-align:left;
+      }  
+
+p {font-size:20px;
+          font-family:sansserif;
+          letter-spacing:3px;
+          line-height:30px;
+          color:black;
+          margin: 30px;
+          padding: 30px;
+          }
+ 
+form {column-count:2;
+         column-gap:50px;
+         column-rule-width:0px;
+         column-rule-style:solid;
+         column-rule-color:white;
+         margin:60px;
+         padding:10px; 
+         background-color:#40bf40;  
+         color:white;
+         border-radius:10px;
+         border:2px solid orange;
+         }
+
+
+
+</style>
+</head>
+<body>
+<br>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li style="float:right"><a class="active" href="contactus.html">CONTACT US</a></li>
+<li class="dropdown"> <a href="" class="dropbtn">ABOUT US</a>
+<div class="dropdown-content">
+<a href="what.html">WHAT IS NGO? </a>
+<a href="why.html">WHY</a>
+<a href="reg.HTML">REGISTER</a> 
+<li><a href="mv.html">MISSION AND VISION</a></li>
+<li><a href="news.html">NEWS</a></li>
+
+
+</ul><br>
+
+<p id="h2">T0 REGISTER</p>
+<p>We whole heartedly welcome you all to enroll yourself in our organization.<br>
+We instantly keep you updated on the upcoming events.<br>
+On enrolling yourself in the registration,we want you to read the terms and conditions before registering .<br>
+</p>
+<p id="h2">TERMS AND CONDITIONS</p>
+<p>1.By using this website,you confirm that you accept these terms and conditions and you agree to comply with them.<br>
+If you don't accept the terms and conditions ,you must not use and register it.<br>
+2.Please check this page from time to time and take notice of any chnages.<br>
+3.Commercial use or publication of the content on the site is strictly prohibited without prior authorisation from us.<br>
+4.Some photos and videos have been published on the site with the permission of the relevant third party copywrite owners.<br> 
+5.Ensure that you  register with your involvment and not on any compulsions.<br>
+6.Our prior condition is that those who enrolled themselves must attend all the events and awareness 
+programs irrespective of the reasons.
+</p>
+
+
+
+<form>
+<fieldset>
+
+Name:<br>
+<input type="text" name="fname" maxlength="20" required><br>
+
+Date Of Birth:<br>
+<input type="date" name="Date Of Birth"  min="2004-01-01" required><br>
+
+MobileNumber:<br>
+<input type="text" value="+91"read only maxlength="13"><br>
+
+Email Address:<br>
+<input type="text" name="mail" value="@gmail.com" required><br>
+
+Gender:<br>
+<select name="Gender" reqiured>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select><br>
+
+State:<br>
+<input type="text" name="Name"  required><br>
+</fieldset>
+<fieldset>
+Work:<br>
+<select name="work" required>
+<option value="Employed">Employed</option>
+<option value="Unmployed">Unemployed</option>
+<option value="Student">Student</option><br></select>
+
+Type A Message....<br>
+<textarea  name="message" disabled style="width:400px; height:180px;border-color:#e0e0eb;" disabled>
+</textarea><br><br>
+
+<input type="button" name="submit" value="Register"><br>
+
+</form>
+</fieldset>
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<html>
+<head><title>CoimbatoreCitizens'Foundation</title>
+<style>
+ul {list-style-type: none;
+     position:fixed;
+     top:-30;
+     overflow:hidden;
+     margin:30px;
+     padding:30px;
+     width:1224px;
+     height:25px;
+     display:inline-block;
+     background-color:#40bf40;
+     border-left:12px solid orange;
+     }
+
+
+     
+
+li {float:left;
+    border-right:2px solid #001a00;
+   }
+
+    
+
+li a, .dropbtn {display:inline-block;
+                     color: white;
+                     text-align: center; 
+                     padding: 14px 16px;
+                     text-decoration: none;
+                     }
+
+
+li a:hover .dropdown:hover .dropbtn {background-color:black;
+                                                           }
+
+li.dropdown {display:inline-block;
+                    }
+
+.dropdown-content {display:none;
+                               position:fixed;
+                              background-color:#194d19;
+                              min-width:150px;      
+                              box-shadow:0pz 8px 16px 0px rgba(0,0,0,0.2);
+                              z-index:1;
+                              }
+
+.dropdown-content a {color:white;
+
+                                  padding:12px 16px;
+                                  display:block;
+                                  text-align:left;
+                                  }
+
+.dropdown-content a:hover {background-color:#40bf40;
+                                            }
+
+.dropdown:hover  .dropdown-content {display:block;
+                                                            }
+
+
+p {margin: 50px;
+    padding: 0px;
+    font-size:20px;
+    color:white;
+    text-align:justified;
+    letter-spacing:3px;
+    line-height:30px;
+    background-color:#194d19;
+    font-family:sans-serif;s
+    }
+#box {width:150px;
+      height:60px;
+      color:black;
+       text-align:justified;
+background-color:#40bf40;
+      border-left:8px solid orange;
+      font-size:30px;
+      }
+#para {color:black;
+     font-size:20px;
+               font-family:sansserif;
+               margin: 50px;
+               padding: 0px;
+               letter-spacing:3px;
+               text-align:justified;
+               line-height:30px;
+               background-color:white;
+    }
+       
+
+</style>
+</head>
+<script>
+</script>
+<body>
+<br>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li style="float:right"><a class="active" href="contactus.html">CONTACT US</a></li>
+<li class="dropdown"> <a href="" class="dropbtn">ABOUT US</a>
+<div class="dropdown-content">
+<a href="what.html">WHAT IS NGO? </a>
+<a href="why.html">WHY?</a>
+<a href="reg.html">REGISTER</a> 
+<li><a href="mv.html">MISSION AND VISION</a></li>
+<li><a href="news.html">NEWS</a></li>
+<button type="submit"  onclick="location.href='https://www.facebook.com/';" name="fb" value="myimage" style="float:right;","background-color:blue;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC" alt="img" width="50" height="50">
+<button type="submit"  onclick="location.href='https://www.youtube.com/';" name="youtube" value="myimage" style="float:right;"><img src="https://lh3.googleusercontent.com/lMoItBgdPPVDJsNOVtP26EKHePkwBg-PkuY9NOrc-fumRtTFP4XhpUNk_22syN4Datc" alt="img" width="50" height="50">
+</button>
+<button type="submit"  onclick="location.href='https://www.instagram.com/';" name="insta" value="myimage" style="float:right;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI_WcxHIyme7fWgvTEQHOOL0eDBrmpmP3SYCYTEDdyWC3R-wgm&s" alt="img" width="50" height="50">
+<button type="submit"  onclick="location.href='https://twitter.com/';" name="twitter" value="myimage" style="float:right;"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAMAAAAKE/YAAAAAIVBMVEUdofL///8Am/Lw+P7g7v2w1PmUxffJ4ft8uvZEqPRhsfUwpUuvAAAEL0lEQVR4nO2c25arIAxAOeEq///BB9C2WkUhJthZK/t5BvcwIQkUq5QgCIIgCIIgCIIgCIIgCIIgCIIgCILQDbx4WqSVZDpFZ6231sVJ/QVxUM6afx+MDTXtX/lrADbGi7c70gZw03jBPTDZnfGMnb60AYLWVFN9Z5zkUXFOsx3WI6dZTv8QSyVt0AMB+KpymexXjABMLv91OtJIp+d65Eigzp3TZKefyUnQeb38FTTOMQ3nkGNdOSfrlAtfxmmiiYIDyjpCWcM+aezZhHygkjbY4aCWNqpYGuX0aOwk9DvjF/z3o91ryM4IgdjtvOTW+zV+lbP6rJsCeuOca03KJJO9HdnrZ/fko89/qNUZoGRrfII9lk7DtY/XOdE2Z2trdI6S285xk5KaC1bvRLt3G6jvp70v6eYhod5xHKE/P46tY+uH7/od29Y/9U30BwLn3UwnTEOIdC/D95SQpOrp4P9sL9fjRXPH7Hycbs1VZE+9SZrUuVIj9HnyOwiqkc71DmK3WVr/0sl2pYqmWIOv51cfUg/t+i+dOBPtWWaBk+ek2T58EiJ5eNLDg9PGR/vDAwyENF1stAgYq3YnXY9LN6Qv48LWG7EQiaVbdiDa2Lg6W0SkPGLp5ubH2BDiVNz7iwu5dEeEGuO9dS48Lo3uJJ6VPuqaiKEsLYt19866m5OmACOcR8PU5T5I62EwOR/wW5NKu9w9xzTfEdciN0J2uFSkS23TKY2FyJlD7p917KQLmjOFkPX/szVrVLyhOuP9y9LdB7YYdKR0TtVwhPT987sva/4STr0OB8UHeWOKO8PoQtN2HmrIVJPWwwV2adJ6OIM+Am2GPDoyzAVGMyiz71yoE95izdtNk+8PF2vOsObIHYs1X4TwREexxhw5t8F41wq4mlSGJL3W5gkR2lZ6b60svbZhv9MG8Lm6QwTfMlSrm6KRdkmyOrtyIOoN8XJkKiyLNE9RZI5onvNe1ohm2uGyVfC3NcNU059Kf0PfoPIWwwL5ZpH0k+WqNXGAsKa7jzVpkh4QHEUaefnkkCHBUawJ97hjgqNANtfMZWUDEOUQ6nPSK+3+z5D30J/eXVkTaI92VvNe4JbzwEW40Z6C1xr5idczzrM3gELtYkYmjgPtP+iM+wz3SWdAHoM86IxNe4R3MxHKuJRHcHcea6ywxWV4HXwrh4P3ONugvU/aqJux+GOxQRuVDTG4O+ePLa8SUODytcCYZJ313tzbize+tHEfIDvZNQNXIEwk+299+Lo1nzWyVG+Uz94e+E3tkzcHeLWR5S8ru4fKSUl9mIKiU5Z79KsNUk/XmUrK3fUnlWdtFX3j9kob9zNfh5HLovUXgWKMdZXXX54i3/ePoWaefMO0f4PkF3j1Ii5/M0rB5nqv/sJ3u8AXT/sIgiAIgiAIgiAIgiAIgiAIgiAIwq/xHxyuKStxXXJ9AAAAAElFTkSuQmCC" alt="img" width="50" height="50">
+</button>
+
+</li>
+</ul><br><br>
+<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBKDXHiD3yFR0dQoKYpF-14T5XgkvIoAH58a5YcIajVyIBchJ-" alt="img" width="200" <br> <i>Serving The Society  Is Our Prime Duty </i></p>
+<p id="box">OUR MOTTO</p>
+<p id="para">Our students have joined their hands together in this initiative because all of them believe in it.Coimbatore Citizens Foundation's motto is to help the needy people.Through our organization,you can reach out to the people in need of help.CCF can help your support reach the right people.Our foundation is exclusive only for the people of Coimbatore City, and the best part of it is that it is run by students.These students are all really passionate about their work in our organization.We,our organiation is intended to work for the society and the community.Our NGO is managed by the students of Coimbatore.The very purpose of forming the group is to manitain a sustainable society,with all priviliged rights to all.And an important note that this NGO is running of its own accompany .It is independent of the caste,religion,language,and other factors.The aim of the organization is to develop the economy of  helpless  people and children.<p/>
+</body>
+</html>

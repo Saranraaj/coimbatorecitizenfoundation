@@ -1,0 +1,139 @@
+<html>
+<head><title>NGO</title>
+<style>
+ul {list-style-type: none;
+     position:fixed;
+     top:-50;
+     overflow:hidden;
+     margin:30px;
+     padding:30px;
+     width:1224px;
+     height:8px;
+     display:inline-block;
+     background-color:#40bf40;
+     border-left:10px solid orange;
+     }
+
+
+     
+
+li {float:left;
+    border-right:2px solid #001a00;
+   }
+
+    
+
+li a, .dropbtn {display:inline-block;
+                     color: white;
+                     text-align: center; 
+                     padding: 14px 16px;
+                     text-decoration: none;
+                     }
+
+
+li a:hover .dropdown:hover .dropbtn {background-color:black;
+                                                           }
+
+li.dropdown {display:inline-block;
+                    }
+
+.dropdown-content {display:none;
+                               position:fixed;
+                              background-color:#194d19;
+                              min-width:150px;      
+                              box-shadow:0pz 8px 16px 0px rgba(0,0,0,0.2);
+                              z-index:1;
+                              }
+
+.dropdown-content a {color:white;
+
+                                  padding:12px 16px;
+                                  display:block;
+                                  text-align:left;
+                                  }
+
+.dropdown-content a:hover {background-color:#40bf40;
+                                            }
+
+.dropdown:hover  .dropdown-content {display:block;
+                                                            }
+
+
+
+#contact {font-size:20px;
+               font-family:sansserif;
+               margin: 50px;
+               padding: 30px;
+               letter-spacing:3px;
+               text-align:center;
+               line-height:30px;
+               background-color:white;
+               column-count:2;
+              column-gap:220px;
+              column-rule-style:solid;
+              column-rule-width:0px;
+              column-rule-color:black;
+              background-image:url("data:image/jpeg;base64,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");
+              background-repeat:no-repeat;
+              background-position:center;
+              background-image:fixed;
+              }
+#info {margin: 30px;
+         padding: 30px;
+         letter-spacing:5px;
+         line-height:40px; 
+         text-align:justified;
+         font-size:20px;
+         background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWnXx7CnC83wkD4BG7zLpBUPRVT-k3HY05EGRZGRCzjCamAIrv");
+              background-repeat:no-repeat;
+              background-position:right;
+              background-image:fixed;
+        
+              background-color:white;
+              
+         }
+#gm {text-align:right;
+         color:orange;
+   font-size:20px;
+         }
+ 
+</style>
+</head>
+<body>
+
+
+
+<ul>
+<li><a href="home.html">HOME</a></li>
+
+<li style="float:right"><a class="active" href="contactus.html">CONTACT US</a></li>
+
+<li class="dropdown"> <a href="" class="dropbtn">	ABOUT US</a>
+<div class="dropdown-content">
+<a href="what.html">WHAT IS NGO?</a>
+<a href="why.html">WHY?</a>
+<a href="reg.HTML">REGISTER</a>
+<li><a href="mv.html">MISSION AND VISION</a></li> 
+<li><a href="news.html">NEWS</a></li>
+</div>
+</li>
+</ul><br><br><br>
+<p id="contact">
+TO CONTACT MANAGER<br>
+G.Naren,<br>
+Manager,<br>
+Vellalore,<br>
+Coimbatore.<br><br>
+TO CONTACT REGRADING QUERIES<br>
+D.Rohit,<br>
+Assitant Worker,<br>
+Peelamedu,<br>
+Coimbatore.</p>
+<p id="info">We, the admin of the organisation is always ready to face the consequences and<br>
+provide the maximum neccesaries that the people require.<br>
+Here is the contact details of our officers .<br>You can avail them at anytime you need.<br>
+Or else, you can mail your reqirements and neccesities.</p><br> 
+<p id="gm">Gmail ID:weccf4u@gmail.com</p>
+</p>
+</body>
+</html>
